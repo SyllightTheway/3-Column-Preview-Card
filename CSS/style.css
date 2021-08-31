@@ -1,0 +1,86 @@
+body {
+  color: white;
+  margin: 100px;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 25px 25px 50px 25px;
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 25px 25px 50px 25px;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 25px 25px 50px 25px;
+  border-radius: 0 10px 10px 0;
+}
+
+.btn {
+  padding: 6px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.sedans .btn {
+  color: hsl(31, 77%, 52%);
+}
+.suvs .btn {
+  color: hsl(184, 100%, 22%);
+}
+.luxury .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn-light:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.icon {
+  margin: 25px 0;
+}
+
+.title {
+  margin: 30px 0;
+}
+
+.description {
+  margin-bottom: 150px;
+}
+
+@media (max-width: 991px) {
+  .sedans {
+    border-radius: 10px 0 0 0;
+  }
+  .suvs {
+    border-radius: 0 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .luxury .description {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  .suvs {
+    border-radius: 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .luxury .description {
+    margin-bottom: 150px;
+  }
+}
